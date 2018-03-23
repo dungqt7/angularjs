@@ -1,33 +1,52 @@
 <header class="header">
-    <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top nk-navbar-fixed nk-navbar-solid">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo-light.svg" alt="logo-light" class="nk-nav-logo-onscroll">
-                    <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo.svg" alt="logo-dark-svg">
-                </div>
-                <div class="col-6">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="header-title">
-                    <div class="bg-image">
-                        <div class="background-image" style="background-image : url('https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/uploads/sites/3/2017/01/home-7.jpg')">
-                        </div>
-                        <div class="bg-image-overlay" style="background-color: rgba(12, 12, 12, 0.6);"></div>
-                    </div>
-                    <div class="nk-header-table">
-                        <h2 class="nk-subtitle text-white">New Branding Agency</h2>
-
-                    </div>
-                </div>
-            </div>
+  <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top nk-navbar-fixed nk-navbar-solid" [ngStyle] ="{'background-color' : background ? 'white' : ''}" >
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo-light.svg" alt="logo-light" [ngStyle] ="{'display' : hiden ? 'none' : 'block'} "
+            class="nk-nav-logo-onscroll">
+          <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo.svg" alt="logo-dark-svg" [ngStyle] ="{'display' : block ? 'block' : 'none'} ">
         </div>
-    </nav>
+        <div class="col-6">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">BLOG</a>
+            </li>
+            <li>
+              <a href="#" >LOGIN</a>
+            </li>
+            <li>
+              <a href="#" (click)="openDialog()">REGISTER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-image-overlay"></div>
+  <div class="main-title">
+    <div class="nk-header-table">
+      <h2 class="nk-subtitle text-white">New Branding Agency</h2>
+      <h1 class="nk-maintitle">We are about to change the way
+        <br>
+        <em class="fw-400">you publish on the web</em>
+      </h1>
+      <br>
+      <a href="">
+        <button class="nk-btn">Free Download</button>
+      </a>
+    </div>
+    <div class="icon-down" >
+      <i class="fas fa-chevron-down icon-scroll-down"></i>
+    </div>
+  </div>
 </header>
