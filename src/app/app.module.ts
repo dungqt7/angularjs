@@ -8,19 +8,22 @@ import { DialogComponent } from './dialog/dialog.component';
 import { FormsModule } from '@angular/forms';
 import { FormLoginComponent } from './form-login/form-login.component';
 import {  ReactiveFormsModule } from '@angular/forms';
+import {map} from 'rxjs/operators';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
     ProjectComponent,
     DialogComponent,
-    FormLoginComponent
+    FormLoginComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule.forRoot()
   ],
   entryComponents: [FormLoginComponent],
   providers: [],

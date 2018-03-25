@@ -1,24 +1,24 @@
-  .nk-nav-logo-onscroll {
+.nk-nav-logo-onscroll {
     width: 85px;
     margin-top: 48px;
-  }
+}
 
-  .nk-nav-logo-onscroll+img {
+.nk-nav-logo-onscroll+img {
     display: none;
     width: 85px;
     margin-top: 48px;
-  }
+}
 
-  .nk-navbar {
+.nk-navbar {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 2;
     height: 100px;
-  }
+}
 
-  ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 10px 50px;
@@ -26,24 +26,23 @@
     font-weight: 300;
     display: block;
     margin-top: 36px;
-  }
+}
 
-  li {
+li {
     display: inline;
-  }
+}
 
-  li a {
+li a {
     margin-left: 10px;
-    color: #bfbfbf;
     text-decoration: none;
     font-size: 16px;
-  }
+}
 
-  li a:hover {
-    color: white;
-  }
+li a:hover {
+    color: white !important;
+}
 
-  .background-image {
+.background-image {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -54,111 +53,609 @@
     z-index: -2;
     background-position: 50% 50%;
     background-size: cover;
-  }
+}
 
-  .header {
+.header {
     position: relative;
     background-image: url('https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/uploads/sites/3/2017/01/home-7.jpg');
-  }
+}
 
-  .background-image:after {
-    /* background-color: rgba(12, 12, 12, 0.6); */
-  }
-
-  .bg-image-overlay {
+.bg-image-overlay {
     position: absolute;
-    /* background-size: cover; */
     background-color: rgba(12, 12, 12, 0.6);
     z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 74%;
     opacity: 0.5;
-  }
+}
 
-  /* .nk-subtitle {
-      font-size: .93rem;
-      letter-spacing: .2em;
-      margin-bottom: 1.1rem;
-      text-transform: uppercase;
-      font-family: inherit;
-      position: absolute;
-      color:white!important
-  } */
-
-  .nk-header-table {
+.nk-header-table {
     opacity: 1;
     padding-top: 101px;
     min-height: 100vh;
     position: relative;
     text-align: center;
     margin-top: 15px;
-  }
+}
 
-  .nk-header-table h2 {
+.nk-header-table h2 {
     color: white !important;
     z-index: 2;
     position: absolute;
     text-align: center;
-  }
+    font-size: 24px;
+    margin-left: 283px;
+}
 
-  .nk-maintitle {
+.nk-maintitle {
     color: white !important;
     z-index: 2;
     position: absolute;
     margin-top: 39px;
-    margin-left: 151px;
-  }
+    margin-left: 49px;
+    font-size: 46px;
+}
 
-  .nk-subtitle {
-    margin-left: 292px;
-  }
+.nk-subtitle {
+    margin-left: 245px;
+}
 
-  .fw-400 {
-    margin-left: -78px;
+.fw-400 {
+    margin-left: 16px;
     margin-top: 31px;
-  }
+}
 
-  .main-title {
+.main-title {
     margin-left: 277px;
     position: relative;
-  }
+}
 
-  .nk-btn {
+.nk-btn {
     width: 200px;
-    margin-top: 137px;
-    margin-right: 160px;
+    margin-top: 228px;
+    margin-right: 267px;
     color: white;
     background-color: black;
     height: 51px;
-  }
+}
 
-  .hiden {
+.hiden {
     display: none !important;
-  }
+}
 
-  .block {
+.block {
     display: block;
-  }
+}
 
-  .icon-down {
+.icon-down {
     margin-left: 430px;
+}
 
-
-  }
-
-  .fa-chevron-down {
+.fa-chevron-down {
     color: #fff !important;
     position: absolute;
     z-index: 2;
     top: 574px;
-    left: 420px;
-    right:0;
+    left: 371px;
+    right: 0;
     border: 1px solid;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     opacity: .6;
-  }
+}
+
+.text-xs-center {
+    text-align: center
+}
+
+.text-xs-center h2 {
+    margin-top: 20px;
+}
+
+.mnt-5 {
+    margin-top: -5px !important;
+}
+
+.content {
+    font-size: 17px;
+    margin-left: 189px;
+}
+
+.sub-content {
+    font-size: 17px;
+    margin-left: 195px;
+}
+
+.min-sub-content {
+    font-size: 17px;
+    margin-left: 345px;
+}
+
+ :after,
+ :before {
+    box-sizing: inherit;
+}
+
+.signature {
+    margin-top: 38px;
+    margin-left: -303px;
+}
+
+.bg-dark {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+    background-color: #252525 !important;
+    color: #fff !important;
+}
+
+.bg-image-parallax {
+    background-image: url('assets/image/bg-pattern.jpg');
+}
+
+.jarallax-container-0 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.bg-dark {
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("http://unvab.com/snow-free-html/assets/images/bg-pattern.jpg");
+    top: 0px;
+    left: 0px;
+    width: 1349px;
+    height: 136px;
+    overflow: hidden;
+    pointer-events: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    visibility: visible;
+    transform: translate3d(0px, 86.8px, 0px);
+}
+
+.suitcase {
+    margin-left: 144px;
+    margin-right: 15px;
+}
+
+.fa-suitcase {
+    margin-left: 72px;
+    margin-top: 34px;
+}
+
+.suitcase .match-project {
+    margin-left: -48px;
+    font-size: 18px;
+    margin-top: -37px;
+}
+
+.suitcase p {
+    font-size: 16px;
+    margin-left: 58px;
+    margin-top: -65px;
+}
+
+.fa-clock {
+    margin-top: 34px;
+}
+
+.hour-work {
+    margin-left: -197px;
+    margin-top: -36px;
+    font-size: 16px;
+}
+
+.title-work {
+    margin-top: -61px;
+    margin-left: -117px;
+    font-size: 16px;
+}
+
+.fa-star {
+    margin-top: 34px;
+}
+
+.feddback {
+    margin-left: -207px;
+    margin-top: -39px;
+    font-size: 16px;
+}
+
+.title-feddback {
+    margin-top: -58px;
+    margin-left: -100px;
+    font-size: 16px;
+}
+
+.row-dark {
+    display: flex;
+    margin-top: 29px;
+}
+
+.heart {
+    margin-left: -99px;
+    margin-top: 21px;
+}
+
+.happy {
+    margin-left: -209px;
+    margin-top: -37px;
+    font-size: 16px
+}
+
+.client {
+    margin-top: -23px;
+    margin-left: -135px;
+    font-size: 16px;
+}
+
+.work {
+    margin-left: -51px;
+    margin-right: -208px;
+}
+
+.work+div {
+    margin-left: 81px;
+    margin-right: -25px;
+}
+
+.bg-white {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+    background-color: #fff !important;
+    margin-top: 152px;
+}
+
+.title-white {
+    text-align: center;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.sub-p {
+    margin-top: -34px;
+}
+
+.image-product {
+    position: relative;
+    margin-top: -120px;
+}
+
+
+/* .row-image {
+      position: relative;
+  } */
+
+.image-disk {
+    background-image: url("assets/image/portfolio-7-sm.jpg");
+    background-size: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 368px;
+    top: -400px;
+    margin-top: -10px;
+    padding-bottom: 100%;
+    background-position: 50% 50%;
+    overflow: hidden;
+    left: 122px;
+}
+
+.item-disk {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .85);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: 50px;
+    transition: opacity .5s, background-color .5s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item-disk .record {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: transform .4s .2s, opacity .4s .2s;
+}
+
+.image-shirt {
+    background-size: 100%;
+    height: 400px;
+    background-image: url("assets/image/portfolio-4-sm.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 368px;
+    top: -399px;
+    margin-top: -11px;
+    padding-bottom: 100%;
+    background-position: 50% 50%;
+    overflow: hidden;
+    left: 490px;
+}
+
+.row-product {
+    display: flex;
+    margin-top: -102px;
+}
+
+.shopping-bag {
+    background-image: url("assets/image/portfolio-5-sm.jpg");
+    position: absolute;
+    top: 141px;
+    left: 858px;
+    right: 0;
+    bottom: 0;
+    background-position: 50% 50%;
+    height: 249px;
+    width: 368px;
+}
+
+.image-magazine {
+    background-image: url("assets/image/portfolio-9-sm.jpg");
+    background-size: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 368px;
+    margin-top: -10px;
+    padding-bottom: 100%;
+    background-position: 50% 50%;
+    overflow: hidden;
+    left: 122px;
+    top: -153px;
+}
+
+.iphone {
+    background-size: 100%;
+    height: 400px;
+    background-image: url("assets/image/portfolio-3-sm.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 368px;
+    top: -152px;
+    margin-top: -11px;
+    padding-bottom: 100%;
+    background-position: 50% 50%;
+    overflow: hidden;
+    left: 490px;
+}
+
+.place-holder {
+    background-image: url("assets/image/portfolio-8-sm.jpg");
+    position: absolute;
+    top: 389px;
+    left: 858px;
+    right: 0;
+    bottom: 0;
+    background-position: 50% 50%;
+    height: 249px;
+    width: 368px;
+}
+
+.card {
+    background-image: url("assets/image/portfolio-2-sm.jpg");
+    position: absolute;
+    top: 636px;
+    left: 121px;
+    right: 0;
+    bottom: 0;
+    background-position: 50% 50%;
+    height: 483px;
+    width: 371px;
+}
+
+.note {
+    background-image: url("assets/image/portfolio-6-sm.jpg");
+    position: absolute;
+    top: 636px;
+    left: 491px;
+    right: 0;
+    bottom: 0;
+    background-position: 50% 50%;
+    height: 483px;
+    width: 368px;
+}
+
+.last-image {
+    background-image: url("assets/image/portfolio-12-sm.jpg");
+    position: absolute;
+    top: 635px;
+    left: 858px;
+    right: 0;
+    bottom: 0;
+    background-position: 50% 50%;
+    height: 483px;
+    width: 368px;
+}
+
+.bg-dark-1 {
+    background-position: 50% 50%;
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+    width: 1349px;
+    height: 243px;
+    overflow: hidden;
+    pointer-events: none;
+    margin-left: 0px;
+    margin-top: 1030px;
+    visibility: visible;
+    -webkit-transform: translate3d(0px, 86.8px, 0px);
+    transform: translate3d(0px, 86.8px, 0px);
+    background-image: url(http://unvab.com/snow-free-html/assets/images/bg-pattern.jpg);
+}
+
+.text-center h2 {
+    font-size: 16px;
+    color: white;
+}
+
+blockquote.nk-blockquote-style-1 {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    max-width: 715px;
+    margin: 0 auto;
+    margin-top: 26px
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+blockquote {
+    font-family: Playfair Display, serif;
+    color: #171717;
+    font-size: 1.348rem;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+}
+
+.after-block {
+    margin-top: 10px;
+}
+
+.bg-white1 {
+    background-color: white;
+    margin-top: 87px;
+}
+
+.show-image {
+    margin-left: 268px;
+    margin-top: 15px;
+}
+
+.first-slide {
+    width: 200px;
+    height: 200px;
+    margin-right: -1px;
+    margin-left: -294px;
+}
+
+.second-slide {
+    width: 200px;
+    height: 200px;
+    margin-right: 38px;
+    margin-left: 30px;
+}
+
+.third-slide {
+    width: 200px;
+    height: 200px;
+    margin-left: -7px
+}
+
+.four-slide {
+    width: 200px;
+    height: 200px;
+    margin-left: 40px
+}
+
+.five-slide {
+    width: 200px;
+    height: 200px;
+    margin-left: 40px
+}
+
+.bg-gray {
+    background-color: white;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.bg-gray h2 {
+    font-size: 2.6rem;
+}
+
+.thumbnail a {
+    color: inherit;
+}
+
+.thumbnail p {
+    font-size: 16px;
+    margin-left: 51px;
+}
+
+.thumbnail img {
+    width: 300px;
+}
+
+.caption {
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .03);
+}
+
+.nk-post-category a {
+    position: absolute;
+    top: 154px;
+    background-color: black;
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    left: 90px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.caption h3 {
+    font-size: 16px;
+}
+
+.position {
+    top: 150px;
+    position: absolute;
+    left: 87px;
+    background-color: black;
+    color: white!important;
+    width: 100px;
+}
+
+.vertical-gap h2 {
+    font-size: 25px;
+    margin-left: 58px;
+}
+
+.vertical-gap p {
+    margin-left: 57px;
+    font-size: 16px;
+}

@@ -5,7 +5,7 @@ import {FormControl, Validators} from '@angular/forms';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css']
+  styleUrls: ['./project.component.css'],
 })
 export class ProjectComponent implements OnInit {
   // getUrl() {
@@ -17,6 +17,8 @@ export class ProjectComponent implements OnInit {
   hiden = false;
   block;
   background;
+  ul;
+  hover;
   openDialog(): void {
     const dialogRef = this.dialog.open(FormLoginComponent, {
       width: '600px',
@@ -34,14 +36,18 @@ export class ProjectComponent implements OnInit {
   @HostListener('window:scroll', [])
     onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number > 100) {
+    if (number > 40) {
       this.hiden = true;
       this.block = true;
       this.background = true;
+      this.ul = true;
+      this.hover = true;
     } else {
         this.hiden = false;
         this.block = false;
         this.background = false;
+        this.ul = false;
+        this.hover = false;
     }
   }
 }

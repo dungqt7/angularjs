@@ -8,6 +8,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule} from '@angular/material';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 const Module = [
   MatFormFieldModule,
   MatSelectModule,
@@ -17,6 +19,7 @@ const Module = [
   MatIconModule,
   MatDatepickerModule,
   MatNativeDateModule,
+  CarouselModule,
 ];
 @NgModule({
   imports: [
