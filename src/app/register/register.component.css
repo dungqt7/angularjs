@@ -1,0 +1,12 @@
+.user-name{
+  margin-left: 10px;
+}
+.user-name .mat-form-field{
+  width: 565px;
+}
+.password .mat-form-field{
+  width: 565px;
+}
+.password{
+  margin-left: 10px;
+}

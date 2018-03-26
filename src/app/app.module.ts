@@ -10,12 +10,14 @@ import { FormLoginComponent } from './form-login/form-login.component';
 import {  ReactiveFormsModule } from '@angular/forms';
 import {map} from 'rxjs/operators';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProjectComponent,
     DialogComponent,
     FormLoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     NgbModule.forRoot()
   ],
-  entryComponents: [FormLoginComponent],
+  entryComponents: [FormLoginComponent, RegisterComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

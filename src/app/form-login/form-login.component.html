@@ -5,7 +5,7 @@
       <input type="email" formControlName="username" class="form-control username">
     </label>
   </div>
-  <div class="col alert alert-danger" role="alert" *ngIf="form.hasError('invalidusername', ['username']) && form.get('username').touched && ispecial"
+  <div class="col alert alert-danger" role="alert" *ngIf="form.hasError('invalidusername', ['username']) && form.get('username').touched "
     [ngClass]="{err: ispecial}">
     Do ton tai username
   </div>
@@ -51,7 +51,7 @@
         <input type="password" formControlName="confirmPassword" class="form-control">
       </label>
     </div>
-    <div class="col alert alert-danger" role="alert" *ngIf="form.hasError('passwordnotmatch', ['pw'])  && ispecial">
+    <div class="col alert alert-danger" role="alert" *ngIf="form.hasError('passwordnotmatch', ['pw'])  ">
       Password khong trung nhau
     </div>
   </div>

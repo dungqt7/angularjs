@@ -1,244 +1,326 @@
 <header class="header">
-    <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top nk-navbar-fixed nk-navbar-solid" [ngStyle]="{'background-color' : background ? 'white' : ''}">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo-light.svg" alt="logo-light" [ngStyle]="{'display' : hiden ? 'none' : 'block'} " class="nk-nav-logo-onscroll">
-                    <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo.svg" alt="logo-dark-svg" [ngStyle]="{'display' : block ? 'block' : 'none'} ">
-                </div>
-                <div class="col-6">
-                    <ul>
-                        <li>
-                            <a href="#" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'}">About</a>
-                        </li>
-                        <li>
-                            <a href="#" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">BLOG</a>
-                        </li>
-                        <li>
-                            <a href="#" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">LOGIN</a>
-                        </li>
-                        <li>
-                            <a href="#" (click)="openDialog()" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">REGISTER</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="bg-image-overlay"></div>
-    <div class="main-title">
-        <div class="nk-header-table">
-            <h2 class="nk-subtitle text-white">New Branding Agency</h2>
-            <h1 class="nk-maintitle">We are about to change the way
-                <br>
-                <em class="fw-400">you publish on the web</em>
-            </h1>
-            <br>
-            <a href="">
-                <button class="nk-btn">Free Download</button>
-            </a>
-        </div>
-        <div class="icon-down">
-            <i class="fas fa-chevron-down icon-scroll-down"></i>
-        </div>
-    </div>
-    <div class="bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-xs-center">
-                    <h2>About Our Agency</h2>
-                </div>
-                <div class="nk-gap mnt-5"></div>
-                <p class="content">We are a new design studio based in USA. We have over 20 years of combined experience, and
-                </p>
-                <p class="sub-content">know a thing or two about designing websites and mobile apps. Clever use of technology and</p>
-                <p class="min-sub-content"> lean processes enable us to work faster and smarter.</p>
-                <img src="assets/image/about-me-signature.jpg" alt="" class="signature">
-            </div>
-        </div>
-    </div>
-</header>
-<div class="bg-dark">
-    <div class="row-dark">
-        <div class="col-3 suitcase">
-            <i class="fas fa-suitcase"></i>
-            <p class="match-project">548</p>
-            <br/>
-            <p>Projects Completed</p>
-        </div>
-        <div class="col-3 work">
-            <i class="far fa-clock"></i>
-            <p class="hour-work">1465</p>
-            <br>
-            <p class="title-work">Working Hours</p>
-        </div>
-        <div class="col-3">
-            <i class="fas fa-star"></i>
-            <p class="feddback">612</p>
-            <br>
-            <p class="title-feddback">Positive Feedbacks</p>
-        </div>
-        <div class="col-3 heart">
-            <i class="far fa-heart"></i>
-            <p class="happy">735</p>
-            <p class="client">Happy Clients</p>
-        </div>
-    </div>
-</div>
-<div class="bg-white">
-    <h2 class="title-white">Best Projects</h2>
-    <br>
-    <p>Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus.</p>
-    <br>
-    <p class="sub-p"> Vestibulum gravida volutpat ipsum non ultrices.</p>
-</div>
-<div class="image-product">
+  <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top nk-navbar-fixed nk-navbar-solid"
+    [ngStyle]="{'background-color' : background ? 'white' : ''}">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 image-disk">
-            </div>
-            <div class="col-md-4 image-shirt">
-
-            </div>
-            <div class="col-md-4 shopping-bag">
-
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo-light.svg" alt="logo-light"
+            [ngStyle]="{'display' : hiden ? 'none' : 'block'} " class="nk-nav-logo-onscroll">
+          <img src="https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/themes/snow/assets/images/logo.svg" alt="logo-dark-svg"
+            [ngStyle]="{'display' : block ? 'block' : 'none'} ">
         </div>
-        <div class="row">
-            <div class="col-4 image-magazine">
-
-            </div>
-            <div class="col-4 iphone">
-
-            </div>
-            <div class="col-4 place-holder">
-
-            </div>
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <a href="#about" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'}">About</a>
+            </li>
+            <li>
+              <a href="#contact" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">Contact</a>
+            </li>
+            <li>
+              <a href="#" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">Portfolio</a>
+            </li>
+            <li>
+              <a href="#blog" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">BLOG</a>
+            </li>
+            <li>
+              <a href="#" (click)="open()" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">LOGIN</a>
+            </li>
+            <li>
+              <a href="#" (click)="openDialog()" [ngStyle]="{'color' : ul ? 'inherit' : '#bfbfbf'} ">REGISTER</a>
+            </li>
+          </ul>
         </div>
-        <div class="row">
-            <div class="col-4 card">
-
-            </div>
-            <div class="col-4 note">
-
-            </div>
-            <div class="col-4 last-image">
-
-            </div>
-        </div>
+      </div>
     </div>
+  </nav>
+  <div class="bg-image-overlay"></div>
+  <div class="main-title">
+    <div class="nk-header-table">
+      <h2 class="nk-subtitle text-white">New Branding Agency</h2>
+      <h1 class="nk-maintitle">We are about to change the way
+        <br>
+        <em class="fw-400">you publish on the web</em>
+      </h1>
+      <br>
+      <a href="">
+        <button class="nk-btn">Free Download</button>
+      </a>
+    </div>
+    <div class="icon-down">
+      <a href="#down">
+          <i class="fas fa-chevron-down icon-scroll-down"></i>
+      </a>
+    </div>
+  </div>
+  <div class="bg-white" id="about" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-lg-2 text-xs-center" >
+          <h2>About Our Agency</h2>
+        </div>
+        <div class="nk-gap mnt-5"></div>
+        <p class="content">We are a new design studio based in USA. We have over 20 years of combined experience, and
+        </p>
+        <p class="sub-content">know a thing or two about designing websites and mobile apps. Clever use of technology and</p>
+        <p class="min-sub-content"> lean processes enable us to work faster and smarter.</p>
+        <img src="assets/image/about-me-signature.jpg" alt="" class="signature">
+      </div>
+    </div>
+  </div>
+</header>
+<div class="bg-dark" id="down">
+  <div class="row-dark">
+    <div class="col-md-3 suitcase">
+      <i class="fas fa-suitcase"></i>
+      <p class="match-project">548</p>
+      <br/>
+      <p>Projects Completed</p>
+    </div>
+    <div class="col-md-3 work">
+      <i class="far fa-clock"></i>
+      <p class="hour-work">1465</p>
+      <br>
+      <p class="title-work">Working Hours</p>
+    </div>
+    <div class="col-md-3">
+      <i class="fas fa-star"></i>
+      <p class="feddback">612</p>
+      <br>
+      <p class="title-feddback">Positive Feedbacks</p>
+    </div>
+    <div class="col-md-3 heart">
+      <i class="far fa-heart"></i>
+      <p class="happy">735</p>
+      <p class="client">Happy Clients</p>
+    </div>
+  </div>
+</div>
+<div class="bg-white" id="blog">
+  <h2 class="title-white">Best Projects</h2>
+  <br>
+  <p>Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus.</p>
+  <br>
+  <p class="sub-p"> Vestibulum gravida volutpat ipsum non ultrices.</p>
+</div>
+<div class="container bg-flex">
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+</div>
+<div class="container bg-flex">
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+</div>
+<div class="container bg-flex">
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+</div>
+<div class="container bg-flex">
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
+  <div class="image-product ">
+    <img src="assets/image/portfolio-7-sm.jpg" alt="" width="310px" height="310">
+    <div class="text-bg">
+      <h2 class="text-center bg-title">Vinyl Record</h2>
+      <p class="bg-content">Mockup</p>
+    </div>
+  </div>
 </div>
 <div class="image-dark-1"></div>
 <div class="bg-dark-1">
-    <blockquote class="nk-blockquote-style-1 text-white">
-        <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.</p>
-        <cite>Michael Hopkins</cite>
-    </blockquote>
+  <blockquote class="nk-blockquote-style-1 text-white">
+    <p>Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am
+      looking forward to start the next one asap.</p>
+    <cite>Michael Hopkins</cite>
+  </blockquote>
 </div>
 <div class="after-block"></div>
 <div class="bg-white1">
-    <div class="container">
-        <div class="row show-image">
-            <img src="assets/image/partner-logo-7-dark.png" class="first-slide">
-            <img src="assets/image/partner-logo-8-dark.png" class="second-slide">
-            <img src="assets/image/partner-logo-1-dark.png" alt="" class="third-slide">
-            <img src="assets/image/partner-logo-2-dark.png" alt="" class="four-slide">
-            <img src="assets/image/partner-logo-3-dark.png" alt="" class="five-slide">
-        </div>
+  <div class="container">
+    <div class="row show-image">
+      <img src="assets/image/partner-logo-7-dark.png" class="first-slide">
+      <img src="assets/image/partner-logo-8-dark.png" class="second-slide">
+      <img src="assets/image/partner-logo-1-dark.png" alt="" class="third-slide">
+      <img src="assets/image/partner-logo-2-dark.png" alt="" class="four-slide">
+      <img src="assets/image/partner-logo-3-dark.png" alt="" class="five-slide">
     </div>
+  </div>
 </div>
 <div class="bg-gray">
-    <h2>Latest Blog</h2>
-    <p>Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.</p>
-    <div class="row">
-        <div class="col-4">
-            <div class="thumbnail">
-                <img src="assets/image/post-6.jpg" alt="...">
-                <a href="#" class="position">Design</a>
-                <div class="caption">
-                    <a href="">Why you should Always First</a>
-                    <h3>August 14, 2016</h3>
-                    <p>Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish appear don't, third deep.</p>
-                </div>
-            </div>
+  <h2>Latest Blog</h2>
+  <p>Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat
+    ipsum non ultrices.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="assets/image/post-6.jpg" alt="...">
+        <a href="#" class="position">Design</a>
+        <div class="caption">
+          <a href="">Why you should Always First</a>
+          <h3>August 14, 2016</h3>
+          <p>Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish appear don't, third deep.</p>
         </div>
-        <div class="col-4">
-            <div class="thumbnail">
-                <img src="assets/image/post-1-mid.jpg" alt="...">
-                <a href="#" class="position">Nature</a>
-                <div class="caption">
-                    <a href="">Something I need to tell you</a>
-                    <h3>
-                        September 18, 2016
-                    </h3>
-                    <p>That female isn't midst divide kind upon seas lights greater green creature lights brought.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="thumbnail">
-                <img src="assets/image/post-3-mid.jpg" alt="...">
-                <a href="#" class="position">Nature</a>
-                <div class="caption">
-                    <a href="">The History of Nature</a>
-                    <h3>
-                        August 27, 2016
-                    </h3>
-                    <p>Third is fly. From one under in itself two waters, all own. Said male shall greater own grass.</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="assets/image/post-1-mid.jpg" alt="...">
+        <a href="#" class="position">Nature</a>
+        <div class="caption">
+          <a href="">Something I need to tell you</a>
+          <h3>
+            September 18, 2016
+          </h3>
+          <p>That female isn't midst divide kind upon seas lights greater green creature lights brought.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="assets/image/post-3-mid.jpg" alt="...">
+        <a href="#" class="position">Nature</a>
+        <div class="caption">
+          <a href="">The History of Nature</a>
+          <h3>
+            August 27, 2016
+          </h3>
+          <p>Third is fly. From one under in itself two waters, all own. Said male shall greater own grass.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="row vertical-gap">
-    <div class="col-5">
-        <h2>Contact Info:</h2>
-        <p>Praesent interdum congue mauris, et fringilla lacus pel vitae. Quisque nisl mauris, aliquam eu ultrices vel, conse vitae sapien at imperdiet risus. Quisque cursus risus id. fermentum, in auctor quam consectetur.</p>
-        <ul class="nk-contact-info">
-            <li>
-                <strong>Address:</strong> 10111 Santa Monica Boulevard, LA
-            </li>
-            <br>
-            <li>
-                <strong>Phone:</strong>+44 987 065 908
-            </li>
-            <br>
-            <li>
-                <strong>Email:</strong> info@Example.com
-            </li>
-            <br>
-            <li>
-                <strong>Fax:</strong> +44 987 065 909
-            </li>
-        </ul>
+<div class="row vertical-gap" id="contact">
+  <div class="col-md-5">
+    <h2>Contact Info:</h2>
+    <p>Praesent interdum congue mauris, et fringilla lacus pel vitae. Quisque nisl mauris, aliquam eu ultrices vel, conse vitae
+      sapien at imperdiet risus. Quisque cursus risus id. fermentum, in auctor quam consectetur.</p>
+    <ul class="nk-contact-info">
+      <li>
+        <strong>Address:</strong> 10111 Santa Monica Boulevard, LA
+      </li>
+      <br>
+      <li>
+        <strong>Phone:</strong>+44 987 065 908
+      </li>
+      <br>
+      <li>
+        <strong>Email:</strong> info@Example.com
+      </li>
+      <br>
+      <li>
+        <strong>Fax:</strong> +44 987 065 909
+      </li>
+    </ul>
 
-    </div>
-    <div class="col-7">
-        <form action="#" class="nk-form nk-form-ajax">
-            <div class="row vertical-gap">
-                <div class="col-md-6">
-                    <input type="text" class="form-control required" name="name" placeholder="Your Name">
-                </div>
-                <div class="col-md-6">
-                    <input type="email" class="form-control required" name="email" placeholder="Your Email">
-                </div>
-            </div>
+  </div>
+  <div class="col-md-7">
+    <form action="#" class="nk-form nk-form-ajax" [formGroup]="contact">
+      <div class="row vertical-gap">
+        <div class="col-md-6">
+          <input type="text" class="form-control required" placeholder="Your Name" [formControl]="nameFormControl">
+          <mat-error *ngIf="nameFormControl.hasError('required')">
+            UserName
+            <strong> is required</strong>
+          </mat-error>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control required" name="email" placeholder="Your Email" [formControl]="emailFormControl">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is
+            <strong>required</strong>
+          </mat-error>
+        </div>
+      </div>
 
-            <div class="nk-gap-1"></div>
-            <input type="text" class="form-control required" name="title" placeholder="Your Title">
-
-            <div class="nk-gap-1"></div>
-            <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true"></textarea>
-            <div class="nk-gap-1"></div>
-            <div class="nk-form-response-success"></div>
-            <div class="nk-form-response-error"></div>
-            <button class="nk-btn">Send Message</button>
-        </form>
-    </div>
+      <div class="nk-gap-1"></div>
+      <input type="text" class="form-control required form-title" name="title" placeholder="Your Title" [formControl]="titleFormControl">
+      <mat-error *ngIf="titleFormControl.hasError('required')">
+          Title is
+          <strong>required</strong>
+        </mat-error>
+      <div class="nk-gap-1"></div>
+      <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true" [formControl]="messageFormControl"></textarea>
+      <mat-error *ngIf="messageFormControl.hasError('required')">
+          Message is
+          <strong>required</strong>
+        </mat-error>
+      <div class="nk-gap-1"></div>
+      <div class="nk-form-response-success"></div>
+      <div class="nk-form-response-error"></div>
+      <button class="nk-btn message" (click) ="send($event)"  [disabled]="contact.invalid">Send Message</button>
+    </form>
+  </div>
 </div>

@@ -38,34 +38,34 @@ export class FormLoginComponent implements OnInit {
     'Men',
     'Women',
   ];
-
-  constructor(private fb: FormBuilder,  public dialogRef: MatDialogRef<FormLoginComponent>,
+  // tslint:disable-next-line:no-unused-expression
+emailFormControl = new FormControl('', [
+  Validators.required,
+  Validators.email,
+]);
+constructor(private fb: FormBuilder, public dialogRef: MatDialogRef < FormLoginComponent >,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
-  emailFormControl = new FormControl('', [
-    Validators.required,
-    Validators.email,
-  ]);
-  ngOnInit() {
-    this.form = this.fb.group({
-      username: ['', [Validators.required, forbiddenUsername(['dung', 'dat'])]],
-      email: ['', [forbiddenEmail(['admin@gmail.com', 'admin1@gmail.com'])]],
-      pw: this.fb.group({
-        password: ['', [Validators.required]],
-        confirmPassword: ['', [Validators.required]],
-      }, {
-          validator: comparePassword
-        })
-    });
+ngOnInit() {
+  this.form = this.fb.group({
+    username: ['', [Validators.required, forbiddenUsername(['dung', 'dat'])]],
+    email: ['', [forbiddenEmail(['admin@gmail.com', 'admin1@gmail.com'])]],
+    pw: this.fb.group({
+      password: ['', [Validators.required]],
+      confirmPassword: ['', [Validators.required]],
+    }, {
+        validator: comparePassword
+      })
+  });
+}
+onSubmit(event) {
+  if (this.form.value.password === this.form.value.confirmPassword) {
+    this.ispecial = true;
   }
-  onSubmit(event) {
-    if (this.form.value.password === this.form.value.confirmPassword) {
-         this.ispecial = true;
-    }
-    if (this.form.value.username === ['dung', 'dat']) {
-      this.ispecial = true;
-    }
+  if (this.form.value.username === ['dung', 'dat']) {
+    this.ispecial = true;
   }
-  onNoClick() {
-    this.dialogRef.close();
-  }
+}
+onNoClick() {
+  this.dialogRef.close();
+}
 }
