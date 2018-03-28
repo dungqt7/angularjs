@@ -40,7 +40,7 @@
                 <em class="fw-400">you publish on the web</em>
             </h1>
             <br>
-            <a href="">
+            <a href="" class="download">
                 <button class="nk-btn">Free Download</button>
             </a>
         </div>
@@ -260,21 +260,21 @@
 
     </div>
     <div class="col-md-7">
-        <form action="#" class="nk-form nk-form-ajax" [formGroup]="contact">
+        <form action="#" class="nk-form nk-form-ajax">
             <div class="row vertical-gap">
                 <div class="col-md-6">
                     <input type="text" class="form-control required" placeholder="Your Name" [formControl]="nameFormControl">
-                    <mat-error *ngIf="nameFormControl.hasError('required')">
+                    <mat-error *ngIf="nameFormControl.hasError('required') && isvalidate">
                         UserName
                         <strong> is required</strong>
                     </mat-error>
                 </div>
                 <div class="col-md-6">
                     <input type="email" class="form-control required" name="email" placeholder="Your Email" [formControl]="emailFormControl">
-                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required') && isvalidate">
                         Please enter a valid email address
                     </mat-error>
-                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                    <mat-error *ngIf="emailFormControl.hasError('required') && isvalidate">
                         Email is
                         <strong>required</strong>
                     </mat-error>
@@ -283,20 +283,20 @@
 
             <div class="nk-gap-1"></div>
             <input type="text" class="form-control required form-title" name="title" placeholder="Your Title" [formControl]="titleFormControl">
-            <mat-error *ngIf="titleFormControl.hasError('required')">
+            <mat-error *ngIf="titleFormControl.hasError('required') && isvalidate">
                 Title is
                 <strong>required</strong>
             </mat-error>
             <div class="nk-gap-1"></div>
             <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true" [formControl]="messageFormControl"></textarea>
-            <mat-error *ngIf="messageFormControl.hasError('required')">
+            <mat-error *ngIf="messageFormControl.hasError('required') && isvalidate">
                 Message is
                 <strong>required</strong>
             </mat-error>
             <div class="nk-gap-1"></div>
             <div class="nk-form-response-success"></div>
             <div class="nk-form-response-error"></div>
-            <button class="nk-btn message" (click)="send($event)" [disabled]="contact.invalid">Send Message</button>
+            <button class="nk-btn message" (click)="send($event)">Send Message</button>
         </form>
     </div>
 </div>

@@ -2,7 +2,11 @@
   <div class="form-group row">
     <label class="col">
       UserName
-      <input type="email" formControlName="username" class="form-control username">
+      <input type="email" formControlName="username" class="form-control username" [formControl]="usernameFormControl">
+      <mat-error *ngIf="usernameFormControl.hasError('required') && ispecial ">
+        UserName is
+        <strong>required</strong>
+    </mat-error>
     </label>
   </div>
   <div class="col alert alert-danger" role="alert" *ngIf="form.hasError('invalidusername', ['username']) && form.get('username').touched "
@@ -56,6 +60,6 @@
     </div>
   </div>
   <div class="form-group">
-    <button class="btn btn-info" type="submit" (submit)="onSubmit($event)" (click)= "(onNoClick())">Submit</button>
+    <button class="btn btn-info" type="submit" (submit)="onSubmit($event)" >Submit</button>
   </div>
 </form>

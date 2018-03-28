@@ -6,7 +6,8 @@ import { MatInputModule } from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+// tslint:disable-next-line:import-spacing
+import {MatDatepickerModule}  from '@angular/material/datepicker';
 import { MatNativeDateModule} from '@angular/material';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 

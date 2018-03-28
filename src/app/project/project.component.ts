@@ -20,6 +20,7 @@ export class ProjectComponent implements OnInit {
   hiden = false;
   block;
   background;
+  isvalidate;
   ul;
   hover;
   open(): void {
@@ -36,7 +37,6 @@ export class ProjectComponent implements OnInit {
     const dialogRef = this.dialog.open(FormLoginComponent, {
       width: '600px',
       data: { name: this.name, animal: this.animal },
-      disableClose: true
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -63,9 +63,8 @@ export class ProjectComponent implements OnInit {
   ]);
   send(event) {
     // tslint:disable-next-line:max-line-length
-    if (this.nameFormControl.value !== '' && this.emailFormControl.value !== '' && this.emailFormControl.value !== Validators.email && this.titleFormControl.value === '' && this.messageFormControl.value !== '') {
-      alert('Gui thong tin lien lac thanh cong');
-    }
+      // alert('Gui thong tin lien lac thanh cong');
+      this.isvalidate = true;
   }
   ngOnInit() {
     this.heroForm = new FormGroup({

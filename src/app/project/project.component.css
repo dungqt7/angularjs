@@ -3,6 +3,10 @@
   margin-top: 48px;
 }
 
+.header {
+  width: 153%;
+}
+
 .nk-nav-logo-onscroll+img {
   display: none;
   width: 85px;
@@ -26,6 +30,7 @@ ul {
   font-weight: 300;
   display: block;
   margin-top: 36px;
+  margin-left: -77px;
 }
 
 li {
@@ -58,6 +63,8 @@ li a:hover {
 .header {
   position: relative;
   background-image: url('https://cdn-wp.nkdev.info/snow/demo-one-page-agency/wp-content/uploads/sites/3/2017/01/home-7.jpg');
+  background-repeat: no-repeat;
+  width: 139%;
 }
 
 .bg-image-overlay {
@@ -79,6 +86,7 @@ li a:hover {
   position: relative;
   text-align: center;
   margin-top: 15px;
+  margin-left: -77px;
 }
 
 .nk-header-table h2 {
@@ -95,8 +103,16 @@ li a:hover {
   z-index: 2;
   position: absolute;
   margin-top: 39px;
-  margin-left: 49px;
+  margin-left: 94px;
   font-size: 46px;
+}
+
+.download {
+  margin-left: -613px;
+}
+
+.icon-scroll-down {
+  margin-left: -68px;
 }
 
 .nk-subtitle {
@@ -149,11 +165,12 @@ li a:hover {
 }
 
 .text-xs-center {
-  text-align: center
+  text-align: center;
 }
 
 .text-xs-center h2 {
   margin-top: 20px;
+  margin-left: -600px;
 }
 
 .mnt-5 {
@@ -162,17 +179,18 @@ li a:hover {
 
 .content {
   font-size: 17px;
-  margin-left: 189px;
+  margin-left: -29px;
 }
 
 .sub-content {
   font-size: 17px;
-  margin-left: 195px;
+  margin-left: -28px;
 }
 
 .min-sub-content {
   font-size: 17px;
-  margin-left: 345px;
+  margin-top: 10px;
+  margin-left: -30px;
 }
 
 :after,
@@ -208,7 +226,7 @@ li a:hover {
   background-image: url("http://unvab.com/snow-free-html/assets/images/bg-pattern.jpg");
   top: 0px;
   left: 0px;
-  width: 1391px;
+  width: 139%;
   height: 136px;
   overflow: hidden;
   pointer-events: none;

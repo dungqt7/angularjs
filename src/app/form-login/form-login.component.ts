@@ -43,6 +43,9 @@ emailFormControl = new FormControl('', [
   Validators.required,
   Validators.email,
 ]);
+usernameFormControl = new FormControl('', [
+  Validators.required,
+]);
 constructor(private fb: FormBuilder, public dialogRef: MatDialogRef < FormLoginComponent >,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 ngOnInit() {
@@ -64,6 +67,7 @@ onSubmit(event) {
   if (this.form.value.username === ['dung', 'dat']) {
     this.ispecial = true;
   }
+  this.ispecial = true;
 }
 onNoClick() {
   this.dialogRef.close();
